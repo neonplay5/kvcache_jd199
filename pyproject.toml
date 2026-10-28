@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neonplay5-kvcache_jd199"
+version = "0.1.0"
+description = "按段落统计KV Cache 与显存优化工程师·长工具链的上下文回收相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "neonplay5" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://neonplay5.github.io"
+Repository = "https://github.com/neonplay5/kvcache_jd199"
+Issues = "https://github.com/neonplay5/kvcache_jd199/issues"
+
+[project.scripts]
+kvcache_jd199 = "kvcache_jd199:main"
+
+[tool.setuptools]
+py-modules = ["kvcache_jd199"]
